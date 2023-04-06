@@ -1,0 +1,13 @@
+server:
+  port: 9876
+spring:
+  application:
+    name: BASIC-LAW-COMPUTE
+  # ????????
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:/Users/zhaobinhan/IdeaProjects/javaTestTools/springbootTestTool/src/main/resources/basicLaw.db;
+  # ????????
+#  datasource:
+#    driver-class-name: org.sqlite.JDBC
+#    url: jdbc:sqlite::resource:basicLaw.db;
