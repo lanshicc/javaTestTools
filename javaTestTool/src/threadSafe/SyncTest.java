@@ -1,3 +1,5 @@
+package threadSafe;
+
 /**
  * 测试synchronized关键字的使用
  */
@@ -40,8 +42,8 @@ public class SyncTest implements Runnable {
         Thread t2 = new Thread(syncTest);
 
         // 2.修饰静态方法
-        /*Thread t1 = new Thread(new SyncTest());
-        Thread t2 = new Thread(new SyncTest());*/
+        /*Thread t1 = new Thread(new threadSafe.SyncTest());
+        Thread t2 = new Thread(new threadSafe.SyncTest());*/
 
         t1.start();
         t2.start();
