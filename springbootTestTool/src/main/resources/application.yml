@@ -2,12 +2,15 @@ server:
   port: 9876
 spring:
   application:
-    name: BASIC-LAW-COMPUTE
-  # ????????
+    name: AOP-DEMO
   datasource:
-    driver-class-name: org.sqlite.JDBC
-    url: jdbc:sqlite:/Users/zhaobinhan/IdeaProjects/javaTestTools/springbootTestTool/src/main/resources/basicLaw.db;
-  # ????????
-#  datasource:
-#    driver-class-name: org.sqlite.JDBC
-#    url: jdbc:sqlite::resource:basicLaw.db;
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/log_aop_test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+
+# 配置日志
+mybatis-plus:
+  mapper-locations: classpath:/com/zhaobh/test/springboottesttool/mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
