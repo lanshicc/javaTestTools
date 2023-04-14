@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ROOT>
+    <INFO>
+        <NO>A123</NO>
+        <ADDRESS>北京市昌平区</ADDRESS>
+    </INFO>
+    <INFO>
+        <NO>B123</NO>
+        <ADDRESS>北京市海淀区</ADDRESS>
+    </INFO>
+</ROOT>
